@@ -47,7 +47,7 @@ namespace TestesAluno
         [TestMethod]
         public void AprovadoNotaFinalMaisNotaEspecialMaiorOuIgual60()
         {
-            Assert.AreEqual(expected: "Aprovado", aprovacaoAluno.determinarAprovacao(80, 60, 60));
+            Assert.AreEqual(expected: "Aprovado", aprovacaoAluno.determinarAprovacao(80, 20, 100));
         }
 
         [TestMethod]
@@ -65,7 +65,7 @@ namespace TestesAluno
         [TestMethod]
         public void ReprovadoNotaEspecialNegativa()
         {
-            Assert.AreEqual(expected: "Reprovado", aprovacaoAluno.determinarAprovacao(80, 80, -60));
+            Assert.AreEqual(expected: "Reprovado", aprovacaoAluno.determinarAprovacao(80, -80, 60));
         }
 
         [TestMethod]
